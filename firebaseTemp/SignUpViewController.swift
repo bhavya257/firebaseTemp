@@ -21,10 +21,6 @@ class SignUpViewController: UIViewController {
     
     @IBAction func alreadyHaveAccTapped(_ sender: Any) {
         self.dismiss(animated: true)
-        //let storyboard = UIStoryboard(name:"Main",bundle:nil)
-        //let vc = storyboard.instantiateViewController(withIdentifier: "home")
-        //vc.modalPresentationStyle = .overFullScreen
-        //present(vc, animated: true)
     }
     
     @IBAction func signUpTapped(_ sender: Any) {
