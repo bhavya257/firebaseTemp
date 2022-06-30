@@ -27,15 +27,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate{
     
     open func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey: Any] = [:]) -> Bool{
         var flag: Bool=false
-        if ApplicationDelegate.shared.application(app, open: url, sourceApplication: options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String, annotation: options[UIApplication.OpenURLOptionsKey.annotation]){
-            //Facebook
-            flag = ApplicationDelegate.shared.application(app, open: url, sourceApplication: options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String, annotation: options[UIApplication.OpenURLOptionsKey.annotation])
+        //Google
+        flag = GIDSignIn.sharedInstance.handle(url)
+        if flag{
+            return true
         }
         else{
-            //Google
-            flag = GIDSignIn.sharedInstance.handle(url)
+            //Facebook
+            flag = ApplicationDelegate.shared.application(app, open: url, sourceApplication: options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String, annotation: options[UIApplication.OpenURLOptionsKey.annotation])
+            return true
         }
-        return flag
     }
 
     // MARK: UISceneSession Lifecycle
