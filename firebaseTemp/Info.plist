@@ -9,6 +9,14 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
+				<string>fb611281140102085</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
 				<string>com.googleusercontent.apps.745676618837-0b6rispc3dves24dd9bn0k4umfp909md</string>
 			</array>
 		</dict>
@@ -32,5 +40,23 @@
 			</array>
 		</dict>
 	</dict>
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyleDefault</string>
+<!--    Facebook-->
+    <key>CFBundleURLTypes</key>
+    <array>
+      <dict>
+      <key>CFBundleURLSchemes</key>
+      <array>
+        <string>fb611281140102085</string>
+      </array>
+      </dict>
+    </array>
+    <key>FacebookAppID</key>
+    <string>611281140102085</string>
+    <key>FacebookClientToken</key>
+    <string>f734edf488733e223f761626922b79f3</string>
+    <key>FacebookDisplayName</key>
+    <string>Firebase Temp</string>
 </dict>
 </plist>

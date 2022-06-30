@@ -61,7 +61,7 @@
                                     <action selector="googleSignInTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hhj-u7-lwK"/>
                                 </connections>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="61Q-2c-Baa">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="61Q-2c-Baa" customClass="FBSDKLoginButton">
                                 <rect key="frame" x="222" y="727" width="194" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -72,6 +72,7 @@
                     </view>
                     <connections>
                         <outlet property="emailInput" destination="7xi-OF-S2N" id="Fdf-fC-ih5"/>
+                        <outlet property="fbLoginTapped" destination="61Q-2c-Baa" id="R0R-zF-asn"/>
                         <outlet property="passwordInput" destination="5Sk-fH-l3V" id="MhX-fK-MgI"/>
                     </connections>
                 </viewController>
