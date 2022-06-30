@@ -20,10 +20,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate{
         FirebaseApp.configure()
         //Facebook
         ApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
+        //Google
+//       AppDelegate(GIDSignIn.sharedInstance.clientID="745676618837-0b6rispc3dves24dd9bn0k4umfp909md.apps.googleusercontent.com")
         return true
     }
     
-    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey: Any] = [:]) -> Bool{
+    open func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey: Any] = [:]) -> Bool{
         var flag: Bool=false
         if ApplicationDelegate.shared.application(app, open: url, sourceApplication: options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String, annotation: options[UIApplication.OpenURLOptionsKey.annotation]){
             //Facebook
